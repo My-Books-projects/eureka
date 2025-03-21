@@ -1,0 +1,11 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: chzhvkdlrkwhgdkdy!12
+eureka:
+  server:
+    my-url: eureka
+eureka:
+  client:
+    service-url: "http://${spring.security.user.name}:${spring.security.user.password}@180.210.82.248:${server.port}/${eureka.server.my-url}"

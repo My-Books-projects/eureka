@@ -1,0 +1,14 @@
+server:
+  port: 10202
+  shutdown: graceful
+
+
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+  profiles:
+    active: dev
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
